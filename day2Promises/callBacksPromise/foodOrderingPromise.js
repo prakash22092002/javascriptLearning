@@ -3,33 +3,32 @@
 // out to deliver
 // enjoy your meal
 
-function orderFood(preparingFood){
+function orderFood(){
     return new Promise((res,rej)=>{
         res("ordered")
-        console.log("ordere food sucessfully");
-        preparingFood()
+        console.log("ordere food sucessfully")
     }).then((data)=>{
         console.log(data)
     })
 }
 
-function preparingFood(deliveredFood){
+function preparingFood(){
 
     return new Promise((res,rej)=>{
         res("preparing rejected")
         console.log("prepared")
-        deliveredFood()
+        
     }).then((data)=>{
         console.log(data)
     })
 
 }
 
-function deliveringFood(enjoyFood){
+function deliveringFood(){
     return new Promise((res,rej)=>{
         res("delivering food")
         console.log("delivering")
-        enjoyFood()
+        
     }).then((data)=>{
         console.log(data)
     })
