@@ -12,7 +12,7 @@ function arrivingCab(){
     return new Promise((res,rej)=>{
         setTimeout(() => {
             console.log("cab has reached your current location");
-            rej("requesting for OTP")
+            res("requesting for OTP")
         }, 3000);
     })
 }
