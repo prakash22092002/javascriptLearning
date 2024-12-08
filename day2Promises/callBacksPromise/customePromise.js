@@ -13,8 +13,9 @@ completedAssignment
 
 const simplePromise = new Promise((res, rej) => {
   setTimeout(() => {
+    console.log("-------------------------------------------------")
     res("the promise has been resolved after 1 s");
-  }, 1000);
+  }, 3000);
 });
 
 simplePromise
